@@ -1,0 +1,115 @@
+.sec5
+{
+display:flex;
+flex-direction:row;
+flex-wrap:wrap;
+width:100%;
+background-color:#333;
+}
+.footer-item
+{
+width:25%;
+box-sizing: border-box;
+text-align: justify;
+   color: white;
+   padding: 10px;
+   }
+   .footer-line {
+    border: none;
+    border-top: 3px solid white;
+    width: 100%;
+    margin: 20px 0;
+}
+  /* Social Media Area */
+       .social-icons {
+    display: flex;
+    justify-content: center;
+	margin-left:400px;
+    gap: 20px;
+}
+        /* Circles */
+        .social-icons a {
+            width: 45px;
+            height: 40px;
+
+            border: 4px solid black;
+            border-radius: 30%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+
+            transition: 0.3s;
+        }
+
+        /* Hover */
+        .social-icons a:hover {
+            transform: scale(1.1);
+        }
+
+        .facebook:hover {
+            color: #1877f2;
+            border-color: #1877f2;
+        }
+
+        .twitter:hover {
+            color: #1da1f2;
+            border-color: #1da1f2;
+        }
+
+        .instagram:hover {
+            color: #e4405f;
+            border-color: #e4405f;
+        }
+
+        .youtube:hover {
+            color: #ff0000;
+            border-color: #ff0000;
+        }
+
+        .linkedin:hover {
+            color: #0077b5;
+            border-color: #0077b5;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 700px) {
+
+            .footer-top {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .footer-column {
+                width: 100%;
+            }
+
+            .social-icons {
+                gap: 15px;
+                flex-wrap: wrap;
+            }
+
+            .social-icons a {
+                width: 55px;
+                height: 40px;
+                font-size: 16px;
+				 color: white;
+            }
+        }
+		/* Copyright text */
+.copyright {
+    text-align: center;
+    font-size: 14px;
+    padding: 12px 0;
+    width: 100%;
+	color:white;
+	margin-left: -37px;
+}
+
+.copyright span {
+    color: white;
+}

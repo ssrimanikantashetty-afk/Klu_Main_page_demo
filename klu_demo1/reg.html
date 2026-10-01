@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registration Form</title>
+
+    <link rel="stylesheet" href="css/amarcscode.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Registration Form</h1>
+        <p class="subtitle">Fill out the form carefully for registration</p>
+
+        <hr>
+
+        <form name="registrationForm" action="#" method="post">
+
+            <!-- Student Name -->
+            <div class="form-group">
+                <label>Student Name</label>
+
+                <div class="name-row">
+
+                    <div>
+                        <input type="text" name="firstName">
+                        <small>First Name</small>
+                    </div>
+
+                    <div>
+                        <input type="text" name="middleName">
+                        <small>Middle Name</small>
+                    </div>
+
+                    <div>
+                        <input type="text" name="lastName">
+                        <small>Last Name</small>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Birth Date and Gender -->
+            <div class="row">
+
+                <div class="form-group birth">
+                    <label>Birth Date</label>
+
+                    <div class="birth-row">
+
+                        <div>
+                            <select name="month">
+                                <option value="">Please Select</option>
+                                <option>January</option>
+                                <option>February</option>
+                                <option>March</option>
+                                <option>April</option>
+                                <option>May</option>
+                                <option>June</option>
+                                <option>July</option>
+                                <option>August</option>
+                                <option>September</option>
+                                <option>October</option>
+                                <option>November</option>
+                                <option>December</option>
+                            </select>
+                            <small>Month</small>
+                        </div>
+
+                        <div>
+                            <select name="day">
+                                <option value="">Please Select</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                                <option>13</option>
+                                <option>14</option>
+                                <option>15</option>
+                                <option>16</option>
+                                <option>17</option>
+                                <option>18</option>
+                                <option>19</option>
+                                <option>20</option>
+                                <option>21</option>
+                                <option>22</option>
+                                <option>23</option>
+                                <option>24</option>
+                                <option>25</option>
+                                <option>26</option>
+                                <option>27</option>
+                                <option>28</option>
+                                <option>29</option>
+                                <option>30</option>
+                                <option>31</option>
+                            </select>
+                            <small>Day</small>
+                        </div>
+
+                        <div>
+                            <select name="year">
+                                <option value="">Please Select</option>
+                                <option>2000</option>
+                                <option>2001</option>
+                                <option>2002</option>
+                                <option>2003</option>
+                                <option>2004</option>
+                                <option>2005</option>
+                                <option>2006</option>
+                                <option>2007</option>
+                                <option>2008</option>
+                                <option>2009</option>
+                                <option>2010</option>
+                            </select>
+                            <small>Year</small>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="form-group gender">
+                    <label>Gender</label>
+
+                    <select name="gender">
+                        <option value="">Please Select</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+            </div>
+
+
+            <!-- Address -->
+            <div class="form-group">
+                <label>Address</label>
+
+                <input type="text" name="streetAddress">
+                <small>Street Address</small>
+
+                <input type="text" name="streetAddress2">
+                <small>Street Address Line 2</small>
+            </div>
+
+
+            <!-- Email and Mobile -->
+            <div class="row">
+
+                <div class="form-group">
+                    <label>Student E-mail</label>
+
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="ex: myname@example.com">
+
+                    <small>example@example.com</small>
+                </div>
+
+
+                <div class="form-group">
+                    <label>Mobile Number</label>
+
+                    <input
+                        type="tel"
+                        name="mobile"
+                        placeholder="(000) 000-0000">
+                </div>
+
+            </div>
+
+
+            <!-- Phone and Work Number -->
+            <div class="row">
+
+                <div class="form-group">
+                    <label>Phone Number</label>
+
+                    <input
+                        type="tel"
+                        name="phone"
+                        placeholder="(000) 000-0000">
+                </div>
+
+
+                <div class="form-group">
+                    <label>Work Number</label>
+
+                    <input
+                        type="tel"
+                        name="work"
+                        placeholder="(000) 000-0000">
+                </div>
+
+            </div>
+
+
+            <!-- Company and Course -->
+            <div class="row">
+
+                <div class="form-group">
+                    <label>Company</label>
+
+                    <input type="text" name="company">
+                </div>
+
+
+                <div class="form-group">
+                    <label>Courses</label>
+
+                    <select name="course">
+                        <option value="">Please Select</option>
+                        <option>Java</option>
+                        <option>Python</option>
+                        <option>Web Development</option>
+                        <option>PHP</option>
+                        <option>JavaScript</option>
+                        <option>Spring Boot</option>
+                    </select>
+                </div>
+
+            </div>
+
+
+            <!-- Submit -->
+            <div class="button-area">
+                <button type="submit" onclick="index.html">Register</button>
+                <button type="reset" class="reset">Reset</button>
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+</html>

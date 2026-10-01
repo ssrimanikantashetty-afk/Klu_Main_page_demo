@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #rrrrrr;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+ background-color: dimgrey;
+}
+
+.container {
+    width: 700px;
+    margin: 30px auto;
+    padding: 35px 40px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    margin: 0;
+    font-size: 25px;
+    color: #27364b;
+}
+
+.subtitle {
+    margin-top: 6px;
+    margin-bottom: 28px;
+    font-size: 12px;
+    color: #777;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eeeeee;
+    margin-bottom: 25px;
+}
+
+
+/* Form */
+
+.form-group {
+    margin-bottom: 25px;
+    flex: 1;
+}
+
+label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input,
+select {
+    width: 100%;
+    height: 27px;
+    padding: 5px 8px;
+    border: 1px solid #d5d5d5;
+    border-radius: 2px;
+    background-color: white;
+    font-size: 11px;
+    color: #555;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #7aa7d9;
+}
+
+
+/* Student Name */
+
+.name-row {
+    display: flex;
+    gap: 5px;
+}
+
+.name-row > div {
+    flex: 1;
+}
+
+small {
+    display: block;
+    margin-top: 5px;
+    font-size: 9px;
+    color: #777;
+}
+
+
+/* Two columns */
+
+.row {
+    display: flex;
+    gap: 18px;
+}
+
+.row .form-group {
+    width: 50%;
+}
+
+
+/* Birth date */
+
+.birth {
+    width: 50%;
+}
+
+.birth-row {
+    display: flex;
+    gap: 5px;
+}
+
+.birth-row > div {
+    flex: 1;
+}
+
+
+/* Gender */
+
+.gender {
+    padding-left: 0;
+}
+
+
+/* Address */
+
+.form-group > input {
+    margin-bottom: 2px;
+}
+
+.form-group > input + small {
+    margin-bottom: 15px;
+}
+
+
+/* Buttons */
+
+.button-area {
+    text-align: center;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 28px;
+    border: none;
+    border-radius: 3px;
+    background-color: #27364b;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+button:hover {
+    background-color: #1c293a;
+}
+
+button.reset {
+    background-color: #777;
+}
+
+button.reset:hover {
+    background-color: #555;
+}
+
+
+/* Mobile Responsive */
+
+@media (max-width: 750px) {
+
+    .container {
+        width: 95%;
+        margin: 15px auto;
+        padding: 25px;
+    }
+
+    .row {
+        display: block;
+    }
+
+    .row .form-group {
+        width: 100%;
+    }
+
+    .name-row {
+        display: block;
+    }
+
+    .name-row > div {
+        margin-bottom: 15px;
+    }
+
+    .birth-row {
+        display: flex;
+    }
+
+}

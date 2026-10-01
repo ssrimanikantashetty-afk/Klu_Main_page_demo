@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Real Estate Gallery</title>
+
+    <link rel="stylesheet" href="gall.css">
+	<script src="gal.js"></script>
+</head>
+
+<body>
+
+<div class="gallery-container">
+
+    <!-- Heading -->
+    <div class="heading">
+        <p class="top-title">REAL ESTATE INVESTING</p>
+
+        <h1>What Is a Real Estate Agent?</h1>
+
+        <p class="description">
+            Real estate agents are licensed professionals who arrange real estate
+            transactions, putting buyers and sellers together and acting as their
+            representatives in negotiations.
+        </p>
+    </div>
+
+
+    <!-- Gallery -->
+    <div class="gallery">
+
+        <!-- Image 01 -->
+        <div class="gallery-item" onclick="openImage('images/image1.jpg')">
+            <img src="images/68.jpg" alt="Commercial Building">
+
+            <div class="number">01</div>
+        </div>
+
+
+        <!-- Image 02 -->
+        <div class="gallery-item" onclick="openImage('images/image2.jpg')">
+            <img src="images/78.jpg" alt="House">
+
+            <div class="number">02</div>
+        </div>
+
+
+        <!-- Image 03 -->
+        <div class="gallery-item" onclick="openImage('images/image3.jpg')">
+            <img src="images/42.jpg" alt="City">
+
+            <div class="number">03</div>
+        </div>
+
+
+        <!-- Image 04 -->
+        <div class="gallery-item" onclick="openImage('images/image4.jpg')">
+            <img src="images/688.jpg" alt="Apartment">
+
+            <div class="number">04</div>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- Full Screen Image -->
+<div id="lightbox" class="lightbox">
+
+    <span class="close" onclick="closeImage()">&times;</span>
+
+    <img id="lightboxImage" src="" alt="Gallery Image">
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
